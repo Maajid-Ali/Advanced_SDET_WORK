@@ -1,0 +1,72 @@
+      
+        header 
+        {
+            background-color: blue;
+            color: beige;
+            height: 50vh;
+            min-height: 250px;
+        }
+
+        p
+        {
+        font-size: 2.5rem;    
+        }
+
+        #myskills
+        {
+            font-size: 3rem;  
+            font-family: 'Impact'; 
+            color: blueviolet;
+        }
+
+        .subheading 
+        {
+            text-decoration: underline;
+            font-style: italic;
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: "Comic Sans MS", cursive, monospace;
+        }
+
+        #goals {
+            font-size: 2rem;
+        }
+
+        .goals-li {
+            font-size: 75%;
+        }
+         .container {
+                max-width: 740pc;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        
+            nav {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 150px;
+                height: 100%;
+            }
+            
+            nav ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+            
+            nav li {
+                background-color: #f1f1f1;
+                width: 100%;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+            }
+            
+            nav a {
+                color: #000;
+                text-decoration: none;
+            }
