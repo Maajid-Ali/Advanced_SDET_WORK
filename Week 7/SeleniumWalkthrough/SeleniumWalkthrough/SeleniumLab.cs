@@ -20,10 +20,9 @@ namespace SeleniumWalkthrough
         [Category("Happy")]
         public void GivenIAmOnStatusCodeListPage_WhenISelectSortByValuesTab_DescendingCodeValuesListed()
         {
-            var options = new ChromeOptions();
-            options.AddArgument("headless");
+          
 
-            using (IWebDriver driver = new ChromeDriver(options))
+            using (IWebDriver driver = new ChromeDriver())
             {
                 driver.Navigate().GoToUrl("https://the-internet.herokuapp.com/status_codes");
 
@@ -153,8 +152,9 @@ namespace SeleniumWalkthrough
                 driver.Navigate().GoToUrl("https://the-internet.herokuapp.com/dynamic_loading");
 
                  driver.FindElement(By.XPath("//*[@id=\"content\"]/div/a[1]")).Click();
-
-                driver.FindElement(By.Id("start")).Click();
+               
+                driver.FindElement(By.XPath("//*[@id=\"start\"]/button")).Click();
+                Thread.Sleep(5000);
 
                 var message = driver.FindElement(By.Id("finish")).Text;
 
